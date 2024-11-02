@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'aos/dist/aos.css'; /*animaciones*/
+
+@font-face {
+  font-family: 'Rainesta';
+  src: url('./assets/font/Rainesta.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Ragitha';
+  src: url('./assets/font/Ragitha.ttf') format('opentype');
+}
+:root{
+  /*------------ typography---------------*/
+  --body-font:  "Montserrat", sans-serif;
+  --title-font: "Ragitha", serif;
+  --portada-font:  "Rainesta", serif;
+  /*================= font-weight ====================*/
+  --font-light: 300;
+  --font-regular:400;
+  --font-medium:500;
+  --font-semi-bold:600;
+  --font-bold:700;
+  /*==================== font-Style =====================*/
+  --font-style-italic:italic;
+  --font-style-normal:normal;
+
+  /*====================== font-size ====================*/
+  --big-fon-size-h1:6.25rem;
+  --h1-font-size:2.25rem;
+  --h2-font-size:1.7rem;
+  --h3-font-size:1.25rem;
+  --normal-font-size:1rem;
+  --small-font-size:.875rem;
+  /*===================== font-color =================================*/
+  --title-color:#A6706A;
+  --first-text-color:#B58883;
+  --second-text-color: #8B8B8B;
+  /* --light-text-color: #ffffff; */
+
+  /*===================== line-color ============================*/
+  --line-color-light:#ffffff;
+  --line-color-dark:#1E1E1E;
+  /*======================= icon-color: ==============================*/
+  --icon-color:#A6706A;
+  
+  --color_btn:#A6706A;
+}
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  width: 100%;
+  height: 100vh;
+  }
+/*Estilo del scrollbar*/
+/* ::-webkit-scrollbar {
+  width: .5rem;
+  background-color: var(--color_portada);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--color_second);
+  border-radius: 9px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--color_title);
+} */
