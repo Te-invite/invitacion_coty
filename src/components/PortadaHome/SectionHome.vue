@@ -25,7 +25,6 @@ export default {
             <img :src="pluma1" alt="pluma" class="pluma1" data-aos="fade-right">
             <TituloPortada class="tit_portada"/>
         </div>
-        <!--timer-->
     </div>
 </template>
 <style>
@@ -81,17 +80,20 @@ export default {
 }
 
 @media (min-width: 1025px) {
-    .container_portada_home{
-        width:100%;
-        height:1200px;
-    }
+    
     .fotoPortada{
         width:100%;
-        height:1200px;
+        height:1000px;
     }
-    .overlay{
+    .container_title_portada{
+        height:400px;
         width:100%;
-        height:1200px;
+        top:90%;
+    }
+    .pluma1{
+        width: 300px;
+        height:auto;
+        top:25%;
     }
 }
 </style>

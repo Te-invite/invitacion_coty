@@ -63,6 +63,9 @@ export default {
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+    .container_evento {
+        margin-top:3rem;
+    }
     .content_evento {
         width: 100%;
         height: auto;

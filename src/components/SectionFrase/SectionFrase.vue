@@ -50,13 +50,11 @@ export default {
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .container_frase{
-        margin:50% 0;
         width:100%;
         height:400px;
-        border:1px solid blue;
     }
     .content_text{
-        width:80%;
+        width:90%;
         height:60%;
     }
     .texto{
@@ -65,7 +63,7 @@ export default {
 }
 @media (min-width: 1025px) {
     .container_frase{
-        margin:60% 0;
+        margin:4rem 0;
         width:100%;
         height:300px;
     }

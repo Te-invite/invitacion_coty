@@ -47,6 +47,8 @@ export default{
         width:100%;
         height: 350px;
         margin-top:400px;
+        position: relative;
+        z-index: 3;
     }
     .title_nombre{
         font-size: 250px;
@@ -54,5 +56,21 @@ export default{
     .sutitle_nombre{
         font-size: 70px;
     }
+}
+@media (min-width: 1025px) {
+    .container_name{
+        width:100%;
+        height: 550px;
+        margin-top:30%;
+        position: relative;
+        z-index: 3;
+    }
+    .title_nombre{
+        font-size: 450px;
+    }
+    .sutitle_nombre{
+        font-size: 100px;
+    }
+
 }
 </style>

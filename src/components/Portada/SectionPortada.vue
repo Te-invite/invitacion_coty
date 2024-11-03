@@ -27,8 +27,10 @@ export default {
 .container_portada{
     background-image:url('@/assets/img/background_home.webp') ;
     width: 100%;
-    min-height:100vh;
+    height:100vh;
     object-fit: cover;
+    background-position: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
 }
 .container{
@@ -52,8 +54,9 @@ export default {
 }
 @media (min-width: 1025px) {
     .container_portada{
-        min-width: 100%;
-        height:100%;
+        min-width: 100vw;
+        height:100vh;
+        background-repeat: repeat;
     }
 }
 </style>

@@ -188,8 +188,14 @@ export default {
     font-size: 2.4rem;
     line-height: 70%;
    }
+   .counter__content{
+    width:15%;
+   }
     .counter__txt{
         font-size: 2.2rem;
+    }
+    .counter__txt1{
+        font-size: 2rem;
     }
     .counter__label {
         font-size: .7rem;
@@ -212,6 +218,9 @@ export default {
    }
     .counter__txt{
         font-size: 3.5rem;
+    }
+    .counter__txt1{
+        font-size: 2.5rem;
     }
     .counter__label {
         font-size: 1.2rem;

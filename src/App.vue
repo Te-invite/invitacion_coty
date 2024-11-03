@@ -5,7 +5,7 @@ export default {
   methods:{
     async handleMusicPlay() {
       if (!this.audio) {
-        this.audio = new Audio((await import('./assets/music/ed_sheeran_photograph.mp3')).default);
+        this.audio = new Audio((await import('./assets/music/coldplay_fixYou.mp3')).default);
       }
       this.audio.play();
       this.isPlaying = true;

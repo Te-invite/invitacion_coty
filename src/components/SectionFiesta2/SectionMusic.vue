@@ -77,7 +77,7 @@ export default {
     font-family: var(--body-font);
     font-weight: var(--font-light);
     text-align: center;
-    line-height:90%;
+    line-height:100%;
     font-size: .8rem;
 }
 .textMusic1{
@@ -93,8 +93,13 @@ export default {
     height:60px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
+    .content_text_music{
+        width:600px;
+        height:100%;
+    }
     .textMusic{
-        font-size: 2.5rem;
+        font-size: 1.5rem;
+        line-height: 100%;
     }
 }
 @media (min-width: 1025px) {
@@ -102,8 +107,12 @@ export default {
     width:100%;
     height:300px;
     }
+    .content_text_music{
+        width:800px;
+        height:100%;
+    }
     .textMusic{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 </style>

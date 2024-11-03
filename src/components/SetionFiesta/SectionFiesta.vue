@@ -91,32 +91,52 @@ export default {
     height:60px;
 }
 .sesionCarrusel{
+    margin-top: 1.5rem;
     position: relative;
 }
 
 .plumasTop{
     position:absolute;
-    right:5%;
+    right:0%;
     top: -25%;
     z-index:2;
 }
 .plumasBottom{
     position:absolute;
-    left:5%;
+    left:0%;
     bottom:-25%;
     z-index:2;
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .container_fiesta{
-        margin-top:5rem;
         width:100%;
         height:1300px;
     }
+    .content_fraseFiesta{
+        width:600px;
+        height:100%;
+    }
     .textFraseFiesta{
-        font-size:2rem;
+        font-size:1.5rem;
     }
     .curvaLeftPlateada{
         bottom:-15%;
+    }
+    .plumasTop,
+    .plumasBottom{
+        width:auto;
+        height:300px;
+    }
+
+    .plumasTop{
+        right:0%;
+        top: -20%;
+        z-index:2;
+    }
+    .plumasBottom{
+        left:0%;
+        bottom:-20%;
+        z-index:2;
     }
 }
 
@@ -127,11 +147,28 @@ export default {
         min-height:1500px;
         margin-bottom:10%;
     }
+    .content_fraseFiesta{
+        width:800px;
+        height:100%;
+    }
     .textFraseFiesta{
         font-size:2rem;
     }
-    .curvaLeftPlateada{
+    .plumasTop,
+    .plumasBottom{
+        width:auto;
+        height:500px;
+    }
+
+    .plumasTop{
+        right:0%;
+        top: -20%;
+        z-index:2;
+    }
+    .plumasBottom{
+        left:0%;
         bottom:-20%;
+        z-index:2;
     }
 }
 </style>

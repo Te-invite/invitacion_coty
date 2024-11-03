@@ -84,13 +84,21 @@ export default {
     align-items: center;
 }
 @media (min-width: 768px) and (max-width: 991px) {
+    .content_text_gift{
+        width:600px;
+        height:100%;
+    }
     .textGift{
-        font-size: 2.5rem;
+        font-size: 1.5rem;
     }
 }
 @media (min-width: 1025px) {
+    .content_text_gift{
+        width:800px;
+        height:100%;
+    }
     .textGift{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 </style>

@@ -106,7 +106,6 @@ export default {
     z-index:3;
     
 }
-
 .curva_oscura{
     bottom:-25%;
 }
@@ -121,18 +120,7 @@ export default {
     bottom:40%;
     z-index: 2;
 }
-.section_frase{
-    position:relative;
-}
-.box_section{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.box_section {
-    font-size: .5rem;
-}
+
 .curvaR{
     position:absolute;
     top:-6%;
@@ -183,18 +171,24 @@ export default {
     .portada_home{
         width: 100%;
         height:570px;
-        border:1px solid red;
     }
     .container_invitacion{
         width:100%;
         max-height: 100%;
     }
     .curva_oscura{
-        bottom:-0%;
+        bottom:-90%;
     }
  
     .opcion {
         font-size: 1rem;
+    }
+    .plumaDerec{
+        width:250px;
+        height:auto;
+    }
+    .curvaL{
+    bottom:-9%;
     }
     
 }
@@ -204,11 +198,18 @@ export default {
         max-height: 100%;
     }
     .curva_oscura{
-        bottom:-120%;
+        bottom:-105%;
     }
 
     .opcion {
         font-size: 1.5rem;
+    }
+    .plumaDerec{
+        width:400px;
+        height:auto;
+    }
+    .curvaR{
+        top:-18%;
     }
 }
 </style>

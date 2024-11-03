@@ -86,15 +86,16 @@ export default {
     }
 }
 @media (min-width: 1025px) {
-    .title_portadaHome{
-        font-size: 30rem;
+    .numero{
+        width:400px;
+        height:auto;
     }
     .title_portada{
-        font-size: 7.5rem;
+        font-size: 2rem;
     }
     .line{
-        width:400px;
-        margin-top:3.5rem;
+        width:200px;
+        margin:3.5rem 0;
     }
     .subtitle_portadaHome{
         font-size: 2.5rem;

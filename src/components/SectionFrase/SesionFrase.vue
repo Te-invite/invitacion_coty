@@ -37,7 +37,6 @@ export default {
 @media (min-width: 1025px) {
     .container_sesion-frase{
         width: 100%;
-        height:1200px;
     }
     .cintaP{
         bottom:0%;

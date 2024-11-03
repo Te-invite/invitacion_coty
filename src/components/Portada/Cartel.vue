@@ -25,8 +25,8 @@ export default {
 </template>
 <style>
 .container_cartel{
-    width:320px;
-    height: 246px;
+    width:400px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;

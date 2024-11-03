@@ -202,8 +202,8 @@ textarea,
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .containerFormulario {
-        width:90%;
-        height:100%;
+        width:900px;
+        height:800px;
     }
 
     .titleFormulario{
@@ -250,6 +250,9 @@ textarea,
     .mb-3{
         margin-top: 4rem;
         
+    }
+    .text_limite{
+        font-size: 1rem;
     }
     input,
     textarea,

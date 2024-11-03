@@ -34,4 +34,10 @@ export default {
         height:600px;
     }
 }
+@media (min-width: 1025px) {
+    .backImg{
+        width:100%;
+        height:950px;
+    }
+}
 </style>
