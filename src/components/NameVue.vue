@@ -17,9 +17,8 @@ export default{
 </template>
 <style>
 .container_name{
-    margin-top:2rem;
     width:100%;
-    height: 100%;
+    height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -42,5 +41,18 @@ export default{
     color:var(--title-color);
     font-size: var(--h2-font-size);
     line-height: 80%;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+    .container_name{
+        width:100%;
+        height: 350px;
+        margin-top:400px;
+    }
+    .title_nombre{
+        font-size: 250px;
+    }
+    .sutitle_nombre{
+        font-size: 70px;
+    }
 }
 </style>

@@ -1,21 +1,31 @@
 <template>
-    <svg id="cintaPlat" viewBox="0 0 434 47" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-            d="M2.0784 0C118.573 49.3487 196.333 45.4094 275.854 28.4986C325.575 17.926 375.284 7.35519 434 12.9501L433.968 29.5878C375.352 24.0024 325.666 19.1029 276.001 29.6642C196.369 46.5981 116.703 63.5391 0 14.1021L2.0784 0Z"
-            fill="url(#paint0_linear_2004_58)" />
-        <defs>
-            <linearGradient id="paint0_linear_2004_58" x1="0" y1="23.3881" x2="434" y2="23.3881"
-                gradientUnits="userSpaceOnUse">
-                <stop offset="0.11" stop-color="#E6E6E6" />
-                <stop offset="0.21" stop-color="#6B6B6B" />
-                <stop offset="0.29" stop-color="#E3E3E3" />
-                <stop offset="0.55" stop-color="#616161" />
-                <stop offset="0.82" stop-color="#B1B1B1" />
-                <stop offset="0.89" stop-color="#FAFAFA" />
-                <stop offset="1" stop-color="#6B6B6B" />
-            </linearGradient>
-        </defs>
-    </svg>
+    <svg id="cintaPlat"  viewBox="0 0 429 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M-30.634 38.7231C44.5932 8.44455 141.416 20.7446 141.416 20.7446C311.082 30.8531 405.361 17.1642 452.142 5.51453" stroke="url(#paint0_linear_2205_8)" stroke-width="2" stroke-miterlimit="10"/>
+<path d="M432.078 25.4478C348.086 47.5223 167.019 9.46765 167.019 9.46765C56.3062 -16.6737 -50.6518 26.0573 -50.6518 26.0573" stroke="url(#paint1_linear_2205_8)" stroke-width="2" stroke-miterlimit="10"/>
+<defs>
+<linearGradient id="paint0_linear_2205_8" x1="452.142" y1="22.1188" x2="-30.634" y2="22.1188" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E18E92"/>
+<stop offset="0.12" stop-color="#FDF7F8"/>
+<stop offset="0.2" stop-color="#F6DEDF"/>
+<stop offset="0.35" stop-color="#E9ADB0"/>
+<stop offset="0.52" stop-color="#F2D0D2"/>
+<stop offset="0.66" stop-color="#F9E8E8"/>
+<stop offset="0.75" stop-color="#FBF0F0"/>
+<stop offset="1" stop-color="#E6A1A4"/>
+</linearGradient>
+<linearGradient id="paint1_linear_2205_8" x1="432.078" y1="16.6671" x2="-50.6518" y2="16.6672" gradientUnits="userSpaceOnUse">
+<stop stop-color="#E18E92"/>
+<stop offset="0.12" stop-color="#FDF7F8"/>
+<stop offset="0.2" stop-color="#F6DEDF"/>
+<stop offset="0.35" stop-color="#E9ADB0"/>
+<stop offset="0.52" stop-color="#F2D0D2"/>
+<stop offset="0.66" stop-color="#F9E8E8"/>
+<stop offset="0.75" stop-color="#FBF0F0"/>
+<stop offset="1" stop-color="#E6A1A4"/>
+</linearGradient>
+</defs>
+</svg>
+
 </template>
 <style>
 #cintaPlat{

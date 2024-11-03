@@ -1,18 +1,19 @@
 <script>
 import Boton from '../Boton.vue';
-import IconMusic from '../icons/IconMusic.vue';
+import iconM from '../../assets/img/listadetemasnegro-1-1.gif';
 import TitleSection from '../TitleSection.vue';
 import Swal from 'sweetalert2';
 export default {
     name:'SectionMusic',
     components:{
         TitleSection,
-        IconMusic,
         Boton
     },
     data(){
         return{
-            text:'¿Cuál es la canción que no debe faltar en la PlayList de la fiesta?',
+            text1:'SUGIERE UN TEMA INFALTABLE PARA QUE ESTE EN ALGÚN MOMENTO DE LA NOCHE ',
+            text2: '¡Hagamos juntos una fiesta inolvidable!',
+            iconM 
         }
     },
     methods: {
@@ -30,7 +31,7 @@ export default {
         }).then((result) => {
             if (result.isConfirmed) {
                 // Si el usuario presiona "OK"
-                window.open("   ");
+                window.open("https://www.youtube.com/playlist?list=PL4WV8HJeFYo-KcVAGGmZJTnsdTZo_JGdD&jct=nUMSA2MDMc1nYvLTYnyhgA");
             } else if (result.dismiss === Swal.DismissReason.cancel) {
                 // Si el usuario presiona "Cancelar", cierra el popup de SweetAlert
                 this.togglePopUp();
@@ -44,11 +45,12 @@ export default {
     <div  class="content_music" id="sectionmusic" data-aos="zoom-in-left">
         <TitleSection title="MÚSICA">
             <template #icon>
-                <IconMusic/>
+                <img :src="iconM" alt="icon_music" class="iconMusica">
             </template>
         </TitleSection>  
         <span class="content_text_music">
-            <p class="textMusic">https:{{ text }}</p>
+            <p class="textMusic">{{ text1 }}</p>
+            <p class="textMusic1">{{ text2 }}</p>
         </span> 
         <Boton label="SUGERIR CANCIÓN" customClass="btn-mayor" @click="redirectToSheet()"/>   
     </div>
@@ -65,18 +67,30 @@ export default {
  
 }
 .content_text_music{
-    width:100%;
+    width:300px;
     height:100%;
     display: flex;
-   justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .textMusic{
     font-family: var(--body-font);
-    font-style: var(--font-style-italic);
     font-weight: var(--font-light);
     text-align: center;
-    font-size: 1.5rem;
-    margin:0 1rem; 
+    line-height:90%;
+    font-size: .8rem;
+}
+.textMusic1{
+    font-family: var(--body-font);
+    font-weight: var(--font-bold);
+    color:var(--first-text-color);
+    line-height:100%;
+    text-align: center;
+    font-size: 1rem;
+}
+.iconMusica{
+    width:60px;
+    height:60px;
 }
 @media (min-width: 768px) and (max-width: 991px) {
     .textMusic{

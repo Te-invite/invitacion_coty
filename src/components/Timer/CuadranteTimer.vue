@@ -28,4 +28,10 @@ export default {
     position: absolute;
     z-index: 2;
 }
+@media (min-width: 768px) and (max-width: 991px) {
+    .backImg{
+        width:100%;
+        height:600px;
+    }
+}
 </style>

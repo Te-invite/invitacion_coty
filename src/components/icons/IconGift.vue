@@ -69,7 +69,7 @@ svg {
 .linea1,
 .punto {
     fill: none;
-    stroke-width: 2;
+    stroke-width: 1;
     stroke-linecap: round;
     stroke-dasharray: 0 100;
 }

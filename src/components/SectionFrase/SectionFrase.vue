@@ -52,14 +52,15 @@ export default {
     .container_frase{
         margin:50% 0;
         width:100%;
-        height:300px;
+        height:400px;
+        border:1px solid blue;
     }
     .content_text{
         width:80%;
         height:60%;
     }
     .texto{
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 }
 @media (min-width: 1025px) {

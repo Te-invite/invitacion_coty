@@ -61,7 +61,7 @@ export default {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom:1.5rem;
+    margin:1.5rem 0;
 }
 .content_text_gift{
     width:300px;
@@ -70,10 +70,8 @@ export default {
     justify-content: center;
     margin-bottom:.5rem;
 }
-.textGift{
-    
+.textGift{  
     font-family: var(--body-font);
-    font-style: var(--font-style-italic);
     font-weight: var(--font-light);
     text-align: center;
     font-size: 1rem;

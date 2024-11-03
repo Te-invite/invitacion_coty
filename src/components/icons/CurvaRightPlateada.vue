@@ -1,6 +1,6 @@
 <template>
     <div>
-        <svg id="curvaRigthPl" viewBox="0 0 429 161" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg id="curvaRigthPl" data-aos="fade-left" viewBox="0 0 429 161" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path opacity="0.5" fill-rule="evenodd" clip-rule="evenodd"
                 d="M428.509 62.7219C260.083 90.9546 384.805 73.028 278.143 99.03L260.476 97.4217C279.594 50.7353 325.878 16.0517 422.955 20.5375L428.509 62.7219Z"
                 fill="url(#paint0_linear_2120_75)" />
@@ -42,8 +42,8 @@
 </template>
 <style>
 #curvaRigthPl {
-    width: 100%;
-    height: auto
+    width: 100vw;
+    height: auto;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {

@@ -34,7 +34,6 @@ export default {
     height:587px;
     display:flex;
     flex-direction: column;
-    border:1px solid red ;
 }
 .fotoPortada{
     width:100%;
@@ -64,17 +63,20 @@ export default {
     left:0%;
 }
 @media (min-width: 768px) and (max-width: 991px) {
-    .container_portada_home{
+    .container_title_portada{
         width:100%;
-        height:900px;
+        height:600px;
+        top: 70%;
+        margin-bottom: 2rem;
     }
     .fotoPortada{
-        width:100%;
-        height:900px;
+        width:100vw;
+        height:950px;
     }
-    .overlay{
-        width:100%;
-        height:900px;         
+    .pluma1{
+        width: 300px;
+        height:auto;
+        top:25%;
     }
 }
 

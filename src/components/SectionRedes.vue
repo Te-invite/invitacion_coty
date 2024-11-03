@@ -1,17 +1,19 @@
 <script>
-import IconInstagram from './icons/IconInstagram.vue';
+
+import IconInstagram from '../assets/img/igwallnegro.gif';
 import Swal from 'sweetalert2';
 import Boton from './Boton.vue';
 export default {
     name: 'SectionRedes',
     data() {
         return {
-            text: 'Una gran fiesta junto a vos Compartí tus fotos y videos de ese hermoso día',
-            hastag: '#15LUCIA',
+            text: 'NO PUEDEN FALTAR LOS RECUERDOS',
+            hastag: '#Los15deCony',
+            IconInstagram
         }
     },
     components: {
-        IconInstagram,
+
         Boton
     },
     methods: {
@@ -34,12 +36,14 @@ export default {
 }
 </script>
 <template>
-    <div class="containerRedes" >
+    <div class="containerRedes">
+        <img :src="IconInstagram" alt="icono_instagram" class="iconInst">
         <span class="content_textRedes" data-aos="flip-left">
             <h4 class="textoRedes">{{ text }}</h4>
+            <p class="text_hashtag" data-aos="zoom-out-right">{{ hastag }}</p>
+            <p class="tex_hashtag">Quiero ver cómo te preparás para la fiesta y todo lo que vivas en
+                ella.<strong>¡etiquetame!</strong></p>
         </span>
-        <IconInstagram />
-        <p class="text_hashtag" data-aos="zoom-out-right">{{ hastag }}</p>
         <Boton label="COPIAR #" customClass="btn-mayor" @click="copyToClipboard(hastag)" />
     </div>
 </template>
@@ -55,26 +59,40 @@ export default {
 }
 
 .content_textRedes {
-    width: 320px;
+    width: 300px;
     height: 60%;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
 }
 
 .textoRedes {
-    font-family:var(--body-font);
-    font-style: var(--font-style-italic);
+    font-family: var(--portada-font);
+    color: var(--first-text-color);
     font-weight: var(--font-light);
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
+}
+
+.iconInst {
+    width: 60px;
+    height: 70px;
 }
 
 .text_hashtag {
     margin-top: 1rem;
-    font-family: "Playfair Display";
-    font-style: italic;
-    font-size: 1rem;
+    font-family: var(--portada-font);
+    color:var(--title-color);
+    font-size: 3rem;
     line-height: 100%;
+    text-align: center;
+}
+.tex_hashtag{
+    font-family: var(--body-font);
+    color:var(--title-color);
+    font-size: .8rem;
+    text-align: center;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -98,6 +116,7 @@ export default {
         font-size: 2rem;
     }
 }
+
 @media (min-width: 1025px) {
     .containerRedes {
         width: 100%;
@@ -116,5 +135,6 @@ export default {
     .text_hashtag {
         margin-top: 1rem;
         font-size: 2rem;
-    }}
+    }
+}
 </style>

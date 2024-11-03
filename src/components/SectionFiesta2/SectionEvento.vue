@@ -1,8 +1,8 @@
 <script>
-import background2 from '../../assets/img/background_home.webp'
-import DressCode from './DressCode.vue';
+import background2 from '../../assets/img/background_invitacion.webp'
 import SectionGift from './SectionGift.vue';
 import SectionMusic from './SectionMusic.vue';
+import CintaPlateada from '../icons/CintaPlateada.vue';
 export default {
     name: 'SectionEvento',
     data() {
@@ -11,17 +11,20 @@ export default {
         }
     },
     components: {
-        DressCode,
         SectionGift,
-        SectionMusic
+        SectionMusic,
+        CintaPlateada,
     }
 }
 </script>
 <template>
     <div class="container_evento">
+        <img :src="background2" class="background2" alt="tapiz">
+
         <div class="content_evento">
             <!-- Regalos -->
             <SectionGift />
+            <CintaPlateada data-aos="fade-down"/>
             <!-- Musica -->
             <SectionMusic />
         </div>
@@ -35,11 +38,12 @@ export default {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 1rem;
 }
 
 .background2 {
     width: 100%;
-    height: 850px;
+    height: 750px;
 }
 
 .content_evento {

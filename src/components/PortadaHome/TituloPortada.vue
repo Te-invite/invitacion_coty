@@ -60,18 +60,29 @@ export default {
     font-size: 2rem;
 }
 @media (min-width: 768px) and (max-width: 991px) {
+    .container_title-portada{
+        height:450px;
+    }
+
     .title_portadaHome{
         font-size: 25rem;
     }
     .title_portada{
-        font-size: 6.5rem;
+        margin-top: 3rem;
+        font-size: 3.5rem;
     }
+    
+
     .line{
         width:400px;
         margin-top:3rem;
     }
     .subtitle_portadaHome{
         font-size: 2rem;
+    }
+    .numero{
+        width:300px;
+        height:auto;
     }
 }
 @media (min-width: 1025px) {

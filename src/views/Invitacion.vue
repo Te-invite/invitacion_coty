@@ -10,7 +10,8 @@ import SectionFooter from '../components/SectionFooter.vue';
 import BotonAudio from "../components/BotonAudio.vue";
 import CuadranteTimer from '../components/Timer/CuadranteTimer.vue';
 import plumaDerec from '../assets/img/imagen0.webp';
-import FormularioAsistencia from '../components/FormularioAsistencia.vue';
+import CurvaRightPlateada from '../components/icons/CurvaRightPlateada.vue';
+import CurvaLeftPlateada from '../components/icons/CurvaLeftPlateada.vue';
 export default {
     name:'Invitacion',
     components:{
@@ -24,8 +25,8 @@ export default {
         BotonAudio,
         NameVue,
         CuadranteTimer,
-        FormularioAsistencia
-
+        CurvaRightPlateada,
+        CurvaLeftPlateada
     },
     methods: {
         scrollTo(hash) {
@@ -60,25 +61,23 @@ export default {
         </div>
         <!-- Sesion Fiesta -->
         <SectionFiesta/>
-        <FormularioAsistencia/>
-
-
-        <!-- Sesion Fiesta -->
-        <!-- 
-         <SectionEvento/>
-         <BotonAudio class="=btnMusic"/> -->
-        <!-- Hashtag -->
-         <!-- <SectionRedes/>
+        <div class="sesionEvento">
+            <CurvaRightPlateada class="curvaR"/>
+            <CurvaLeftPlateada class="curvaL"/>
+            <SectionEvento/>
+        </div>
+        <SectionRedes/>
+        <BotonAudio class="=btnMusic"/>
         <div class="sesionesTarjetas">
             <div class="opciones">
             <a href="#fiesta" class="opcion" @click.prevent="scrollTo('#fiesta')">FIESTA</a>
             <a href="#asistencia" class="opcion" @click.prevent="scrollTo('#asistencia')">ASISTENCIA</a>
-            <a href="#dresscode" class="opcion" @click.prevent="scrollTo('#dresscode')">DRESS CODE</a>
             <a href="#gift" class="opcion" @click.prevent="scrollTo('#gift')">REGALOS</a>
-            <a href="#sectionmusic" class="opcion" @click.prevent="scrollTo('#music')">MUSICA</a>
+            <a href="#sectionmusic" class="opcion" @click.prevent="scrollTo('#sectionmusic')">MÚSICA</a>
         </div>
         </div>
-         <SectionFooter/> -->
+         <SectionFooter/>
+        
     </div>
 </template>
 <style>
@@ -98,12 +97,14 @@ export default {
     position:relative;
     display:flex;
     justify-content: center;
+    margin-bottom:3rem;
 }
 .curva_oscura{
     left: 0;
     bottom:10%;
     position:absolute;
     z-index:3;
+    
 }
 
 .curva_oscura{
@@ -132,7 +133,21 @@ export default {
 .box_section {
     font-size: .5rem;
 }
-
+.curvaR{
+    position:absolute;
+    top:-6%;
+    right:0;
+}
+.curvaL{
+    position:absolute;
+    bottom:-6%;
+    left:0;
+}
+.sesionEvento{
+    width:100%;
+    height:100%;
+    position:relative;
+}
 .opcion_menu {
     margin-left: 1rem;
     font-family: var(--font_family_principal);
@@ -165,17 +180,23 @@ export default {
     text-decoration: none;
 }
 @media (min-width: 768px) and (max-width: 991px) {
+    .portada_home{
+        width: 100%;
+        height:570px;
+        border:1px solid red;
+    }
     .container_invitacion{
         width:100%;
         max-height: 100%;
     }
     .curva_oscura{
-        bottom:-55%;
+        bottom:-0%;
     }
  
     .opcion {
         font-size: 1rem;
     }
+    
 }
 @media (min-width: 1025px) {
     .container_invitacion{
